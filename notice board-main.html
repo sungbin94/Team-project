@@ -12,7 +12,7 @@
 </head>
 
 <body>
- 
+
   <div class="wrapper">
     <header class="header container">
       <nav class="top-menu content">
@@ -89,7 +89,7 @@
                 <tr>
                   <td><input type="checkbox" class="check"></td>
                   <td>4</td>
-                  <th><a onclick="location.href='notice board-view.html'"href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                  <th><a onclick="location.href='notice board-view.html'" href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                   <td>2022.07.25</td>
                   <td>관리자</td>
                   <td>20</td>
@@ -98,7 +98,7 @@
                 <tr>
                   <td><input type="checkbox" class="check"></td>
                   <td>3</td>
-                  <th><a onclick="location.href='notice board-view.html'"href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                  <th><a onclick="location.href='notice board-view.html'" href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                   <td>2022.07.15</td>
                   <td>관리자</td>
                   <td>30</td>
@@ -106,7 +106,7 @@
                 <tr>
                   <td><input type="checkbox" class="check"></td>
                   <td>2</td>
-                  <th><a onclick="location.href='notice board-view.html'"href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                  <th><a onclick="location.href='notice board-view.html'" href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                   <td>2022.06.25</td>
                   <td>관리자</td>
                   <td>40</td>
@@ -114,7 +114,7 @@
                 <tr>
                   <td><input type="checkbox" class="check"></td>
                   <td>1</td>
-                  <th><a onclick="location.href='notice board-view.html'"href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                  <th><a onclick="location.href='notice board-view.html'" href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
                   <td>2022.06.15</td>
                   <td>관리자</td>
                   <td>50</td>
@@ -126,7 +126,7 @@
             </div>
             <div class="btn__content">
               <button onclick="location.href='notice board-write.html'" class="btn__text">글쓰기</button>
-              <button class="btn__text">삭제</button>
+              <button type="button" onclick="button_event();" class="btn__text">삭제</button>
             </div>
             <div class="text__center">
               <ul class="pagination">
@@ -160,43 +160,42 @@
             </div>
           </div>
     </main>
-   <!--Basic structure of footer-->
-<footer>
+    <!--Basic structure of footer-->
+    <footer>
 
-  <!--The main area of the footer -->
-  <div class="footer-content">
-  
-    <a href="">GR<span>EAT</span></a>
-     <p>이 페이지는 울산지역의 한정으로 만들어진 사이트입니다. 서비스를 이용하시는 모든 회원분들 이용에 감사드립니다. 더더욱 발전하는 GREAT이 되겠습니다. </p>
-    
-  <!--Footer's social icon-->
-     <ul class="socials">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-        <!-- <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li> -->
-      </ul>
-  
-   <!-- Footer's menu item-->
-     <div class="footer-menu">
-        <ul class="f-menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <!-- <li><a href="">Blog</a></li> -->
-          <li><a href="">Notice</a></li>
+      <!--The main area of the footer -->
+      <div class="footer-content">
+
+        <a href="">GR<span>EAT</span></a>
+        <p>이 페이지는 울산지역의 한정으로 만들어진 사이트입니다. 서비스를 이용하시는 모든 회원분들 이용에 감사드립니다. 더더욱 발전하는 GREAT이 되겠습니다. </p>
+
+        <!--Footer's social icon-->
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <!-- <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li> -->
         </ul>
-     </div>
-  
-  </div>
-  
-  <!--Copyright Area-->
-  <div class="footer-bottom">
-      <p>Design By - <a href="#">GREAT Tutorial</a>  </p>
-  </div>
-  
-  </footer>
+
+        <!-- Footer's menu item-->
+        <div class="footer-menu">
+          <ul class="f-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Notice</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!--Copyright Area-->
+      <div class="footer-bottom">
+        <p>Design By - <a href="#">GREAT Tutorial</a> </p>
+      </div>
+
+    </footer>
   </div>
   <script>
     const allChkClick_h = e => {
@@ -209,6 +208,14 @@
       $choose.forEach($choose => $choose.checked = e.target.checked ? true : false);
     }
     document.getElementById('allChk').addEventListener('click', allChkClick_h);
+
+    function button_event() {
+      if (confirm("정말 삭제하시겠습니까??") == true) {    //확인
+        document.form.submit();
+      } else {   //취소
+        return;
+      }
+    }
   </script>
 
 
