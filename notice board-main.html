@@ -54,12 +54,17 @@
         </div>
       </nav>
     </header>
-    <main class="container">
-      <section class="notice">
-        <div class="page__title">
-          <div class="container">
-            <h2><i class="bar"></i>공지사항</h2>
-          </div>
+    <main class=" main-container">
+      <aside class="main-menu">
+        <h3>커뮤니티</h3>
+        <ul>
+          <li class="notice-menu"><a href=""><i class="fa-solid fa-1"></i>공지사항</a></li>
+          <li class="faq-menu"><a onclick="location.href=''" href="#!"><i class="fa-solid fa-2"></i>FAQ</a></li>
+        </ul>
+      </aside>
+      <section class="notice__board">
+        <div class="notice-title width--800px">
+          <h3><i class="bar"></i>공지사항</h3>
         </div>
 
         <!-- notice-board__list area -->
@@ -68,12 +73,12 @@
             <table class="notice-board__table">
               <thead>
                 <tr>
-                  <th scope="col" class="th-del"></th>
-                  <th scope="col" class="th-num">번호</th>
-                  <th scope="col" class="th-title">제목</th>
-                  <th scope="col" class="th-date">등록일</th>
-                  <th scope="col" class="th-Writer">작성자</th>
-                  <th scope="col" class="th-views">조회수</th>
+                  <th></th>
+                  <th>번호</th>
+                  <th>제목</th>
+                  <th>등록일</th>
+                  <th>작성자</th>
+                  <th>조회수</th>
                 </tr>
               </thead>
               <tbody>
@@ -159,6 +164,7 @@
               </div>
             </div>
           </div>
+      </section>
     </main>
     <!--Basic structure of footer-->
     <footer>
