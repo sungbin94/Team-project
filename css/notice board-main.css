@@ -36,6 +36,7 @@ button:hover {
   flex: 1;
   border-right: 2px solid var(--main-color-gre);
   padding-top: 50px;
+  height: 700px;
 }
 
 .main-menu h3 {
@@ -219,8 +220,6 @@ button:hover {
   cursor: pointer;
   border: none;
 }
-
-
 footer{
   position: absolute;
   bottom: 0;
@@ -345,4 +344,3 @@ text-decoration: none;
     margin-bottom: 20px;
   }
 }
-
