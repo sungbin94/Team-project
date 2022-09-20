@@ -26,7 +26,7 @@ button:hover {
   
 }
 
-.main-container{
+/* .main-container{
   display: flex;
   height: 900px;
   padding: 0px;
@@ -63,7 +63,7 @@ button:hover {
 .main-menu li a i {
   margin-right: 7px;
   color: var(--main-color-yel);
-}
+} */
 
 .notice__board{
   display: flex;
