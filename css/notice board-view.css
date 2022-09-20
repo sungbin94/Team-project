@@ -62,6 +62,7 @@
   height: 500px;
 }
 
+
 footer{
   position: absolute;
   bottom: 0;
@@ -167,6 +168,7 @@ display: block;
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
+  font-weight: bold;
 }
 .footer-bottom p a{
   color: var(--main-color-yel);
