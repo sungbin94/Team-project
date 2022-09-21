@@ -1,7 +1,12 @@
 @charset "utf-8";
 
-.width--900px {
-  width: 900px;
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.width--800px {
+  width: 800px;
 }
 
 input:focus {
@@ -136,7 +141,6 @@ button:hover {
 }
 
 footer{
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
